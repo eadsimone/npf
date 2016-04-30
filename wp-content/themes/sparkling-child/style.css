@@ -20,15 +20,15 @@ Version:        1
 /*}*/
 @font-face {
 	font-family: 'geomanistthin_italic';
-	src: url('./fonts/geomanist-thin-italic-webfont.eot');
+	src: url('./fonts/geom_ff/geomanist-thin-italic-webfont.eot');
 }
 @font-face {
 	font-family: 'geomanistlight_italic';
-	src: url('./fonts/geomanist-light-italic-webfont.eot');
+	src: url('./fonts/geom_ff/geomanist-light-italic-webfont.eot');
 }
 @font-face {
 	font-family: 'geomanistbook_italic';
-	src: url('./fonts/geomanist-book-italic-webfont.eot');
+	src: url('./fonts/geom_ff/geomanist-book-italic-webfont.eot');
 }
 
 
@@ -925,6 +925,46 @@ div.position{
 	margin:0px;
 	padding: 0px;
 }
+
+/***buton of video*/
+.body {
+	background-color:red;
+}
+.round-button {
+	/*width:25%;*/
+}
+.round-button-circle {
+	width: 75px;
+	height:0;
+	padding-bottom: 75px;
+	border-radius: 50%;
+	border: 5px solid #ffffff;
+	overflow:hidden;
+
+	background: #4f4f4f;
+	box-shadow: 0 0 3px gray;
+	opacity: 0.8;
+
+}
+.round-button-circle:hover {
+	background:#30588e;
+}
+.round-button a {
+	display:block;
+	float:left;
+	width:100%;
+	padding-top:50%;
+	padding-bottom:50%;
+	line-height:1em;
+	margin-top:-0.5em;
+
+	text-align:center;
+	color:#e2eaf3;
+	font-family:Verdana;
+	font-size:1.2em;
+	font-weight:bold;
+	text-decoration:none;
+}
 /*!*-----------------------------------------------*/
 /*FOOTER
 /*----------------------------------------------- *!*/
@@ -951,7 +991,9 @@ div.position{
 }
 
 
-.logo-footer {}
+.logo-footer {
+	margin-top:5%;
+}
 .phones-footer {
 	font-family: geomanistRegular, sans-serif;
 }
@@ -977,7 +1019,16 @@ div.position{
 #colophon {
 	border: 0px;
 }
-	/******************video*********************/
+
+.phones-footer {
+	margin-top:25%;
+}
+.social-footer {
+	margin-top:25%;
+}
+
+
+/******************video*********************/
 
 .vid-container {
 	position: relative;
@@ -1044,11 +1095,6 @@ div.position{
 	height: 160px;
 	border: 8px solid #e4e4e4;
 }
-
-
-
-
-
 
 .trans-bg {
 	background: rgba(0,0,0,0.5);
