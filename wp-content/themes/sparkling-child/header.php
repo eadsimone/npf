@@ -117,17 +117,22 @@
 	</header><!-- #masthead -->
 
 	<div id="content" class="site-content">
-
-		<div class="top-section">
-			<?php sparkling_featured_slider(); ?>
-			<a class="vidbtn2" href="#"><img src="<?php bloginfo('template_directory'); ?>/images/play-btn.png" /></a>
-			<?php sparkling_call_for_action(); ?>
+		<div class="title-top-section">
+			<div  class="wrap">
+			<?php echo  get_the_title(); ?>
+				</div>
 		</div>
+		<!--<div class="top-section">
+			<?php /*sparkling_featured_slider(); */?>
+			<a class="vidbtn2" href="#"><img src="<?php /*bloginfo('template_directory'); */?>/images/play-btn.png" /></a>
+			<?php /*sparkling_call_for_action(); */?>
+		</div>-->
 
-		<div class="top-section logoslider">
-			<?php echo do_shortcode( '[gs_logo]' ); ?>
-		</div>
-
+		<?php if (($_SERVER['REQUEST_URI'])=="/"): ?>
+			<div class="top-section logoslider">
+				<?php echo do_shortcode( '[gs_logo]' ); ?>
+			</div>
+		<?php endif; ?>
 
 
 		<div class="start-today-mobile">

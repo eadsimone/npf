@@ -65,7 +65,22 @@ body {
 
 /*----------------------------------------------- */
 
+/*top page title*/
+.title-top-section {
+	background: url(images/toptitle.png) no-repeat center left;
+	min-height: 148px;
+	width: 100%;
+	font-family: "Geomanist Light";
+	font-size: 30px;
+	color: #FFFFFF;
+}
 
+.wrap {
+	width: 90%;
+	/*max-width: 24em;*/
+	margin: 0 auto;
+	padding: 0.25em 0.625em;
+}
 
 
 
