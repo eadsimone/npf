@@ -30,7 +30,10 @@ Version:        1
 	font-family: 'geomanistbook_italic';
 	src: url('./fonts/geom_ff/geomanist-book-italic-webfont.eot');
 }
-
+@font-face {
+	font-family: 'geomanistmedium';
+	src: url('./fonts/geom_ff/Geomanist-Medium.otf');
+}
 
 @font-face {
 	font-family: 'geomanistLight';
@@ -67,7 +70,7 @@ body {
 
 /*top page title*/
 .title-top-section {
-	background: url(images/toptitle.png) no-repeat center left;
+	background: url(images/toptitle.png) repeat center left;
 	min-height: 148px;
 	width: 100%;
 	font-family: "Geomanist Light";
@@ -175,6 +178,26 @@ body {
 	font-size: 15px;
 	text-transform: uppercase;
 	color: #fff;
+}
+
+body.archive .post-inner-content,
+body.blog .post-inner-content,
+.post-inner-content:first-child {
+	border-top: 0px;
+	font-family: geomanistRegular, sans-serif;
+	font-size: 16px;
+}
+
+.post-inner-content {
+	border:0px;
+	padding-right: 0px;
+	padding-left: 0px;
+}
+
+.entry-title {
+	font-family: geomanistLight, sans-serif;
+	font-size: 30px;
+	color: #666666;
 }
 
 /*.post-navigation a,*/
@@ -1220,6 +1243,36 @@ div.position{
 	text-align: center;
 
 	z-index: 999999;
+}
+/*!*-----------------------------------------------*/
+/*PAGES SIMPLES*/
+/*----------------------------------------------- *!*/
+/*--------------------About us------------------- *!*/
+.about-us {
+
+}
+
+.about-us p {
+	text-align: justify;
+}
+
+.about-us-end {
+	font-family: geomanistmedium,sans-serif;
+	font-size: 18px;
+	color: #007dc2;
+}
+
+.about-us .vid-container2 {
+	float: right;
+	margin-left: 2%;
+	width: 455px;
+	height: 315px;
+	border: 8px solid #e4e4e4;
+}
+.about-us .vid-container2 iframe,
+.about-us .vid-container2 object,
+.about-us .vid-container2 embed {
+	max-height: none;
 }
 
 

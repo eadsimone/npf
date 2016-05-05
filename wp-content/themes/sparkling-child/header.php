@@ -118,9 +118,9 @@
 
 	<div id="content" class="site-content">
 		<div class="title-top-section">
-			<div  class="wrap">
-			<?php echo  get_the_title(); ?>
-				</div>
+			<div  class="container">
+				<?php echo  get_the_title(); ?>
+			</div>
 		</div>
 		<!--<div class="top-section">
 			<?php /*sparkling_featured_slider(); */?>
