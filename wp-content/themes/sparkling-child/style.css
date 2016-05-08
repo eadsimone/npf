@@ -1367,6 +1367,15 @@ div.position{
 
 }
 
+.about-entry-title {
+	font-family: geomanistLight, sans-serif;
+	font-size: 30px;
+	color: #666666;
+	text-transform: uppercase;
+	margin-top: 0px;
+	margin-bottom: 30px;
+}
+
 .about-us p {
 	text-align: justify;
 }
