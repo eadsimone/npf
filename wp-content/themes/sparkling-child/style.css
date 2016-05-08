@@ -71,11 +71,18 @@ body {
 /*top page title*/
 .title-top-section {
 	background: url(images/toptitle.png) repeat center left;
-	min-height: 148px;
+	min-height: 150px;
 	width: 100%;
-	font-family: "Geomanist Light";
+	font-family: geomanistLight, sans-serif;
 	font-size: 30px;
 	color: #FFFFFF;
+	text-transform: uppercase;
+}
+
+.title-top-section div {
+	padding-top: 70px;
+	line-height: 0px;
+	letter-spacing: 5px;
 }
 
 .wrap {
@@ -198,6 +205,7 @@ body.blog .post-inner-content,
 	font-family: geomanistLight, sans-serif;
 	font-size: 30px;
 	color: #666666;
+	text-transform: uppercase;
 }
 
 /*.post-navigation a,*/
@@ -521,7 +529,8 @@ body.blog .post-inner-content,
 
 
 /*!*-----------------------------------------------*/
-/* section "OUR SERVICES*/
+/* section "OUR SERVICES - home page*/
+/* OUR- GUARANTEE PAGE
 /*----------------------------------------------- *!*/
 
 h2.our-services {
@@ -537,6 +546,7 @@ h2.our-services span {
 	text-align: center;
 	font-size: 45px;
 }
+
 div.our-services {
 	color:#666666;
 	font-family: geomanistLight,sans-serif;
@@ -575,6 +585,111 @@ div.our-services {
 .row.leading-provider.our-services . {
 	margin-bottom: 10%;
 }
+/*****************our-guarantee********/
+
+.our-guarantee-header {
+	margin-bottom:3% ;
+}
+h2.our-guarantee {
+	color:#666666;
+	font-family: geomanistLight,sans-serif;
+	text-align: center;
+	font-size: 30px;
+	/*margin-bottom: 5%;*/
+}
+.dark-guarantee-title {
+	font-family: geomanistBold, sans-serif;
+}
+
+.row.our-guarantee {
+	border-width: 2px;
+	border-style: dashed;
+	border-color: #d7d7d7;
+	padding: 5%;
+}
+
+.row.our-guarantee .row{
+
+	border-top-width: 2px;
+	border-right-width: 2px;
+	border-left-width: 2px;
+	border-bottom-width: 0px;
+	border-style: solid;
+	border-color: #e5e6e6;
+
+}
+
+.row-eq-height {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display:         flex;
+}
+
+.row.our-guarantee .row.end{
+	border-bottom-width: 2px;
+	border-style: solid;
+	border-color: #e5e6e6;
+}
+
+
+.guarantee-table-detail{
+	border-left-width: 2px;
+	border-left-style: solid;
+	border-left-color: #e5e6e6;
+
+	font-family: geomanistRegular, sans-serif;
+	font-size: 18px;
+	color: #007dc2;
+}
+
+.dark-guarantee {
+	font-family: geomanistMedium, sans-serif;
+	font-size: 22px;
+	color: #666666;
+}
+
+.our-guarantee .shield {
+	margin: 2%;
+	text-align: center;
+}
+.rosette{
+	max-width: 66px;
+	max-height: 66px;
+}
+.frame-image {
+	white-space: nowrap;
+	text-align: center;
+	margin: 0.6em 0;
+}
+
+.frame {
+	white-space: nowrap;
+	margin: 0.6em 0;
+}
+
+.frame img {
+	vertical-align: middle;
+}
+
+
+
+
+
+
+
+
+
+.shield-subtitle {
+	font-family: geomanistLight, sans-serif;
+	font-size: 22px;
+	color: #666666;
+	padding-top: 2%;
+	padding-right: 20%;
+	padding-left: 20%;
+	text-align: center;
+}
+
 
 /*!*-----------------------------------------------*/
 /*second section "get-staterted-today-bar Leading  providers of ...*/
