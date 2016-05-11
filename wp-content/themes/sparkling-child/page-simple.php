@@ -33,3 +33,6 @@ get_header(); ?>
 
 <?php get_footer(); ?>
 
+<script>
+	$("h1.entry-title").addClass('hidden');
+</script>
