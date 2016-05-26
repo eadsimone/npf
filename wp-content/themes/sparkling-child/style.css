@@ -1541,7 +1541,19 @@ div.position{
 	/*border-bottom: 5px solid white;*/
 /*}*/
 
+/*!*-----------------------------------------------*/
+/*Contact us page*/
+/*----------------------------------------------- *!*/
+.contactformbox {
+	background-color: #f7f7f7;
+}
 
+
+.title-form{
+	font-family: geomanistLight, sans-serif;
+	font-size: 30px;
+	color: #666666;
+}
 /*!*-----------------------------------------------*/
 /*mobile -responsive*/
 /*----------------------------------------------- *!*/
