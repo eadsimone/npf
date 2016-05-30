@@ -589,7 +589,7 @@ h2.our-guarantee {
 	font-size: 30px;
 	text-align: center;
 }
-
+.title-form,
 .jumbotron p.lead {
 	font-family: geomanistLight;
 	font-size: 30px;
@@ -1230,6 +1230,9 @@ div.position{
 	margin-top: 0px;
 	margin-bottom: 30px;
 }
+.lowercase {
+	text-transform: capitalize;
+}
 
 .about-us p {
 	text-align: justify;
@@ -1420,6 +1423,7 @@ div.position{
 	margin: 4%;
 }
 
+.ourlocation p,
 .int-title-description p{
 	font-family: geomanistRegular, sans-serif;
 	font-size: 16px;
@@ -1472,11 +1476,11 @@ div.position{
 	color: #FFFFFF;
 }
 /*.integration-sectionone div.col-lg-3:hover~#b{*/
-	/*color: #ffffff;*/
+/*color: #ffffff;*/
 /*}*/
 
 /*.integration-subtitle-description:hover {*/
-	/*color: #ffffff;*/
+/*color: #ffffff;*/
 /*}*/
 .titletwo {
 	font-family: geomanistRegular, sans-serif;
@@ -1533,12 +1537,12 @@ div.position{
 }
 */
 /*.arrow-up:hover {*/
-	/*width: 0;*/
-	/*height: 0;*/
-	/*border-left: 5px solid transparent;*/
-	/*border-right: 5px solid transparent;*/
+/*width: 0;*/
+/*height: 0;*/
+/*border-left: 5px solid transparent;*/
+/*border-right: 5px solid transparent;*/
 
-	/*border-bottom: 5px solid white;*/
+/*border-bottom: 5px solid white;*/
 /*}*/
 
 /*!*-----------------------------------------------*/
@@ -1548,11 +1552,170 @@ div.position{
 	background-color: #f7f7f7;
 }
 
+.formrowone {
+	padding-top:5%;
+	padding-left: 7%;
+	padding-right: 7%;
+}
 
-.title-form{
-	font-family: geomanistLight, sans-serif;
-	font-size: 30px;
+.formrow {
+	padding-top:1%;
+	padding-left: 7%;
+	padding-right: 7%;
+}
+
+.contacus-orderpricing .row {
+	padding-top:7%;
+	padding-left: 15%;
+	padding-right: 15%;
+
+}
+
+.box-contact-us-form .row form input {
+	height: 60px;
+}
+
+.contacus-maps header img {
+	margin-left: auto;
+	margin-right: auto;
+	vertical-align: bottom;
+	padding-right: 15px;
+}
+
+.half {
+	width: 49% !important;
+}
+
+h1.about-entry-title{
+	text-align: center;
 	color: #666666;
+}
+.title-form p{
+	color: #666666;
+}
+
+.box-contact-us-form {
+	border: solid 1px #e5e6e6;
+	background-color: #f7f7f7;
+}
+
+.box-contact-us-form .form-group textarea {
+	width: 98%;
+	height: 115px;
+}
+
+.ourlocation h1,
+.contact-country {
+	font-family: geomanistMedium, sans-serif;
+	font-size: 16px;
+	color: #007dc2;
+}
+.contact-country span.number {
+	font-size: 18px;
+	color: #023f88;
+}
+
+.contacus-maps {
+	margin-top: 5%;
+	margin-bottom: 5%;
+	background-color: #ffffff;
+}
+
+.contacus-orderpricing {
+	background-color: #f4f4f5;
+	padding:5%;
+}
+
+.about-entry-title span{
+	color: #000000;
+}
+.blacknpf {
+	font-family: geomanistRegular, sans-serif;
+	font-size: 30px;
+}
+.ovalo {
+	/*width: 115px;*/
+	width: 60%;
+	height: 80px;
+	-moz-border-radius: 10%;
+	-webkit-border-radius: 10%;
+	border-radius: 80%;
+	background-color: #ffffff;
+
+	margin-left: 20%;
+	position: relative;
+
+	font-family: geomanistMedium, sans-serif;
+	font-size: 30px;
+	text-align:center;
+	line-height: 20px;
+	padding-top: 8%;
+	top: -40px;
+}
+
+.country-price {
+	font-family: geomanistMedium, sans-serif;
+	font-size: 16px;
+	text-align:center;
+}
+
+#contacus-orderpricing .col-lg-3 {
+	padding-right: 0px;
+	padding-left: 0px;
+}
+#contacus-orderpricing h1.about-entry-title {
+	margin-bottom: 0px;
+}
+
+.min-height-box {
+	min-height: 120px;
+}
+.text-center{
+	text-align: center;
+}
+.text-white {
+	color: #ffffff;
+}
+.text-light-blue {
+	color:#6996cc;
+}
+.text-dark-blue {
+	color:#007dc2;
+}
+.text-violet {
+	color: #865bb6;
+}
+.text-light-green {
+	color: #00a99d;
+}
+.text-light-blue-bg {
+	background-color:#6996cc;
+}
+.dark-blue-bg {
+	background-color:#007dc2;
+}
+.violet-bg {
+	background-color: #865bb6;
+}
+.light-green-bg {
+	background-color: #00a99d;
+}
+
+.light-grey-bg {
+	background-color: #f4f4f5;
+}
+
+.border-left {
+	border:solid 1px #ffffff;
+}
+
+
+
+
+
+
+#mc_embed_signup{
+
 }
 /*!*-----------------------------------------------*/
 /*mobile -responsive*/
