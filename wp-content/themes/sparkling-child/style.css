@@ -1695,6 +1695,7 @@ h1.about-entry-title{
 .text-light-green {
 	color: #00a99d;
 }
+/*color background*/
 .text-light-blue-bg {
 	background-color:#6996cc;
 }
@@ -1707,6 +1708,20 @@ h1.about-entry-title{
 .light-green-bg {
 	background-color: #00a99d;
 }
+
+.text-light-blue-bg-opacity {
+	background-color:#5e87b7;
+}
+.dark-blue-bg-opacity{
+	background-color:#0070ae;
+}
+.violet-bg-opacity {
+	background-color: #7852a3;
+}
+.light-green-bg-opacity {
+	background-color: #00988d;
+}
+
 
 .light-grey-bg {
 	background-color: #f4f4f5;
@@ -1881,6 +1896,41 @@ ul.checkmarkgreen{
 .fixedwith205  {
 	width: 205px;
 }
+
+.colortable {}
+.colortable th{
+	text-align: center;
+	color: #ffffff;
+	font-family: geomanistMedium, sans-serif;
+	font-size: 26px;
+	font-weight: normal;
+	padding:0px !important;
+	margin:0px !important;
+}
+
+.fzfifteen{
+	font-size: 15px;
+	padding: 0 15%;
+}
+.pricenumber {
+	font-family: geomanistMedium, sans-serif;
+	font-size: 18px;
+}
+.ordersm {
+	font-family: geomanistRegular, sans-serif;
+	font-size: 14px !important;
+}
+.heigh103 {
+	height: 103px;
+}
+
+.text-light-blue-bg-opacity .ovalo,
+.dark-blue-bg-opacity .ovalo,
+.violet-bg-opacity .ovalo,
+.light-green-bg-opacity .ovalo {
+	top: 0px;
+}
+
 
 
 /*!*-----------------------------------------------*/
