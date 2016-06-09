@@ -109,6 +109,30 @@ get_header(); ?>
       $( "#integrationfour" ).addClass( "show" );
       $("#integration-panel-4").addClass( "active" );
     });
+    
+//form pricing
+    $('.selectplan').click(
+        function(e) {
+          e.preventDefault(); // prevent the default action
+          e.stopPropagation(); // stop the click from bubbling
+          $(this).closest('ul').find('.selected').removeClass('selected');
+          $(this).parent().addClass('selected');
+
+          var comparetorvalue=$(this).attr('id');
+
+          if(comparetorvalue==="starter"){
+            $('#contacus-form').addClass('selected');
+            $('#contacus-form').toggleClass('text-light-blue-bg dark-blue-bg');
+          }else if (comparetorvalue==="plus"){
+            $('#contacus-form').toggleClass('dark-blue-bg');
+          }else if(comparetorvalue==="pro"){
+            $('#contacus-form').toggleClass('violet-bg');
+          }else if(comparetorvalue==="enterprise"){
+            $('#contacus-form').toggleClass('light-green-bg');
+          }
+        });
+    
+    
   });
 
 </script>

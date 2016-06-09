@@ -1825,6 +1825,14 @@ tr.pricingrow td{
 	text-align: center;
 }
 
+.princing-5col-table-content {
+	background-color: #f4f4f5;
+}
+
+.table {
+	background-color: #ffffff;
+}
+
 .bg-yellow {
 	background-color: #ffb300;
 	border-bottom: 1px solid white;
@@ -1882,6 +1890,12 @@ ul.checkmarkgreen{
 	max-width: 240px;
 	width: 240px;
 	text-align: left !important;
+	font-family: geomanistLight, sans-serif;
+	font-size: 18px;
+	font-weight: normal;
+	color: #666666;
+	line-height: 20px;
+
 }
 
 .weguaratpos {
@@ -1928,10 +1942,53 @@ ul.checkmarkgreen{
 .dark-blue-bg-opacity .ovalo,
 .violet-bg-opacity .ovalo,
 .light-green-bg-opacity .ovalo {
-	top: 0px;
+	top: 5px;
 }
 
+.widthoneh {
+	width: 100%;
+	padding-top: 5%;
+	max-height: 90px;
+}
 
+.descriptionprice {
+	height: 175px;
+	background-color: #f6f6f7;
+	color: #666666;
+	font-family: geomanistRegular, sans-serif;
+	font-size: 13px;
+	font-weight: normal;
+}
+.paddingdescription{
+	padding: 65px 10px 0px 10px !important;
+}
+
+.starpadding{
+	padding: 90px 45px 0px 45px !important;
+}
+
+.starpadding p span{
+	margin: 0px 5px 0px 5px;
+}
+
+.darkdescprice {
+	color: #333333;
+	font-size: 16px;
+}
+.texmedium16 {
+	font-weight: normal;
+	font-family: geomanistMedium, sans-serif;
+	font-size: 16px;
+}
+
+.resize14 {
+	font-size: 14px;
+}
+
+.onethird {
+	width: 31% !important;
+	margin-right: 1%;
+}
 
 /*!*-----------------------------------------------*/
 /*mobile -responsive*/
