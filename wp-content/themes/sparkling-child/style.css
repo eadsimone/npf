@@ -1680,6 +1680,9 @@ h1.about-entry-title{
 .text-center{
 	text-align: center;
 }
+.text-center img {
+	padding-right: 15px;
+}
 .text-white {
 	color: #ffffff;
 }
@@ -1747,6 +1750,7 @@ h1.about-entry-title{
 	color: #333333;
 	font-family: geomanistMedium, sans-serif;
 	font-size: 15px;
+	text-transform: uppercase;
 }
 
 .posrelfleft {
@@ -1788,16 +1792,16 @@ h1.about-entry-title{
 }
 /*is not using*/
 /*.rotate {*/
-	/*!* Safari *!*/
-	/*-webkit-transform: rotate(-90deg);*/
-	/*!* Firefox *!*/
-	/*-moz-transform: rotate(-90deg);*/
-	/*!* IE *!*/
-	/*-ms-transform: rotate(-90deg);*/
-	/*!* Opera *!*/
-	/*-o-transform: rotate(-90deg);*/
-	/*!* Internet Explorer *!*/
-	/*filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);*/
+/*!* Safari *!*/
+/*-webkit-transform: rotate(-90deg);*/
+/*!* Firefox *!*/
+/*-moz-transform: rotate(-90deg);*/
+/*!* IE *!*/
+/*-ms-transform: rotate(-90deg);*/
+/*!* Opera *!*/
+/*-o-transform: rotate(-90deg);*/
+/*!* Internet Explorer *!*/
+/*filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);*/
 /*}
 .verticaltext {
 	position: relative;
@@ -1908,7 +1912,7 @@ ul.checkmarkgreen{
 	margin-top: 33px;
 }
 .fixedwith205  {
-	width: 205px;
+	width: 18%;
 }
 
 .colortable {}
@@ -1926,6 +1930,13 @@ ul.checkmarkgreen{
 	font-size: 15px;
 	padding: 0 15%;
 }
+
+.title-type-plan{
+	margin: 0px;
+	padding: 15px 0px 0px 0px;
+}
+
+
 .pricenumber {
 	font-family: geomanistMedium, sans-serif;
 	font-size: 18px;
@@ -1975,6 +1986,7 @@ ul.checkmarkgreen{
 	color: #333333;
 	font-size: 16px;
 }
+
 .texmedium16 {
 	font-weight: normal;
 	font-family: geomanistMedium, sans-serif;
@@ -1988,6 +2000,79 @@ ul.checkmarkgreen{
 .onethird {
 	width: 31% !important;
 	margin-right: 1%;
+}
+
+.contacus-form-princing .title-form  {
+	text-align: center;
+}
+.contacus-form-princing .title-form p  {
+	color: white;
+	font-family: geomanistLight, sans-serif;
+	font-size: 30px;
+	font-weight: normal;
+}
+
+#contacus-form-princing input {
+	height: 60px;
+	font-family: geomanistRegular, sans-serif;
+	font-size: 15px;
+	color: #666666;
+	padding-left: 25px;
+}
+
+#contacus-form-princing .container .jumbotron.bottom {
+	background-color: transparent;
+}
+
+.heigh136 {
+	height: 136px;
+}
+
+#princing-5col-table-content .table {
+	margin-bottom: 0px;
+}
+
+.fixedw {
+	width: 19%;
+	padding-left: 3px !important;
+	padding-right: 3px !important;
+}
+.selectplan-table table th div {
+	border-radius: 5px;
+	height: 44px;
+}
+.selectplan-table table th div:hover {
+	cursor: pointer;
+}
+
+.table-responsive.selectplan-table {
+	max-height: 56px;
+	overflow: hidden;
+}
+.selectplan-table table th div p{
+	text-align: center;
+	color: white;
+}
+
+/*not used */
+.selectplanwidthfixed {
+	width:219px;
+
+}
+.selectplan-table .th {}
+.required::-webkit-input-placeholder:after {
+	content: " *";
+	color: red;
+}
+
+.required:-moz-placeholder:after {
+	content: " *";
+	color: red;
+}
+
+.required:-ms-input-placeholder:after {
+	content: " *";
+	color: red;
 }
 
 /*!*-----------------------------------------------*/

@@ -111,27 +111,35 @@ get_header(); ?>
     });
     
 //form pricing
+    var visited=0;
     $('.selectplan').click(
         function(e) {
           e.preventDefault(); // prevent the default action
           e.stopPropagation(); // stop the click from bubbling
-          $(this).closest('ul').find('.selected').removeClass('selected');
-          $(this).parent().addClass('selected');
+//          $(this).closest('ul').find('.selected').removeClass('selected');
+//          $(this).parent().addClass('selected');
 
           var comparetorvalue=$(this).attr('id');
 
-          if(comparetorvalue==="starter"){
-            $('#contacus-form').addClass('selected');
-            $('#contacus-form').toggleClass('text-light-blue-bg dark-blue-bg');
-          }else if (comparetorvalue==="plus"){
-            $('#contacus-form').toggleClass('dark-blue-bg');
-          }else if(comparetorvalue==="pro"){
-            $('#contacus-form').toggleClass('violet-bg');
-          }else if(comparetorvalue==="enterprise"){
-            $('#contacus-form').toggleClass('light-green-bg');
+          if(visited==0) {
+            $('#contacus-form-princing').toggleClass('hidden');            
+            visited++;
           }
-        });
-    
+          $('#contacus-form-princing').attr('class', 'contacus-form-princing');
+          if(comparetorvalue==="starter"){
+            $('#contacus-form-princing').addClass('text-light-blue-bg');
+            $('#mce-PLANTYPE').val('starter');
+          }else if (comparetorvalue==="plus"){
+            $('#contacus-form-princing').addClass('dark-blue-bg');
+            $('#mce-PLANTYPE').val('plus');
+          }else if(comparetorvalue==="pro"){
+            $('#contacus-form-princing').addClass('violet-bg');
+            $('#mce-PLANTYPE').val('pro');
+          }else if(comparetorvalue==="enterprise"){
+            $('#contacus-form-princing').addClass('light-green-bg');
+            $('#mce-PLANTYPE').val('enterprise');
+          }
+        });    
     
   });
 
