@@ -7,32 +7,42 @@
  * @package sparkling
  */
 ?>
+<?php $current_template= basename(get_page_template()); ?>
+<?php if (($current_template=="page.php") || ($current_template=="page-simple-category-slider.php")): ?>
+		</div><!-- close .row -->
+	</div><!-- close .container -->
+</div><!-- close .site-content -->
+<div class="top-section logoslider">
+	<?php echo do_shortcode( '[gs_logo]' ); ?>
+</div>
+<?php endif; ?>
+<!--close the content for default template page	-->
 
-	<div id="footer-area">
-		<div class="container footer-inner">
-			<div class="row">
-				<?php get_sidebar( 'footer' ); ?>
-			</div>
+<div id="footer-area">
+	<div class="container footer-inner">
+		<div class="row">
+			<?php get_sidebar( 'footer' ); ?>
 		</div>
-
-		<footer id="colophon" class="site-footer" role="contentinfo">
-			<div class="site-info container">
-				<div class="row">
-					<?php if( of_get_option('footer_social') ) sparkling_social_icons(); ?>
-					<nav role="navigation" class="col-md-6">
-						<?php sparkling_footer_links(); ?>
-					</nav>
-					<div class="copyright col-md-12">
-						<?php //echo of_get_option( 'custom_footer_text', 'sparkling' ); ?>
-						<?php //sparkling_footer_info(); ?>
-						&copy; 2016 <span class="copywhite">NATIONAL PRODUCTS FULFILMENT</span> ALL RIGHTS RESERVED
-					</div>
-				</div>
-			</div><!-- .site-info -->
-			<div class="scroll-to-top"><i class="fa fa-angle-up"></i></div><!-- .scroll-to-top -->
-		</footer><!-- #colophon -->
 	</div>
-</div><!-- #page -->
+
+	<footer id="colophon" class="site-footer" role="contentinfo">
+		<div class="site-info container">
+			<div class="row">
+				<?php if( of_get_option('footer_social') ) sparkling_social_icons(); ?>
+				<nav role="navigation" class="col-md-6">
+					<?php sparkling_footer_links(); ?>
+				</nav>
+				<div class="copyright col-md-12">
+					<?php //echo of_get_option( 'custom_footer_text', 'sparkling' ); ?>
+					<?php //sparkling_footer_info(); ?>
+					&copy; 2016 <span class="copywhite">NATIONAL PRODUCTS FULFILMENT</span> ALL RIGHTS RESERVED
+				</div>
+			</div>
+		</div><!-- .site-info -->
+		<div class="scroll-to-top"><i class="fa fa-angle-up"></i></div><!-- .scroll-to-top -->
+	</footer><!-- #colophon -->
+</div>
+<!--</div><!-- #page -->-->
 
 <script>
 	$(function() {

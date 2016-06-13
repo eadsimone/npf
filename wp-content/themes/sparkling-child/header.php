@@ -38,8 +38,9 @@
 <body <?php body_class(); ?>>
 
 <!-- Google Tag Manager -->
-<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-WQNSNR"
-				  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<noscript>
+	<iframe src="//www.googletagmanager.com/ns.html?id=GTM-WQNSNR" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+</noscript>
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 		new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
 		j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
@@ -63,9 +64,6 @@
 					</div>
 
 					<?php if( get_header_image() != '' ) : ?>
-
-
-
 
 						<div id="logo">
 							<a href="<?php echo esc_url( home_url( '/' ) ); ?>"><img src="<?php header_image(); ?>"  height="<?php echo get_custom_header()->height; ?>" width="<?php echo get_custom_header()->width; ?>" alt="<?php bloginfo( 'name' ); ?>"/></a>
@@ -116,33 +114,33 @@
 		</nav><!-- .site-navigation -->
 	</header><!-- #masthead -->
 
-	<div id="content" class="site-content">
+	<!--	<div id="content" class="site-content">-->
+
+	<?php $current_url =$_SERVER['REQUEST_URI']; ?>
+	<?php if ($current_url=="/"): ?>
+		<div class="top-section logoslider">
+			<?php sparkling_featured_slider(); ?>
+			<?php echo do_shortcode( '[gs_logo]' ); ?>
+		</div>
+	<?php else: ?>
 		<div class="title-top-section">
 			<div  class="container">
 				<?php echo  get_the_title(); ?>
 			</div>
 		</div>
-		<!--<div class="top-section">
-			<?php /*sparkling_featured_slider(); */?>
-			<a class="vidbtn2" href="#"><img src="<?php /*bloginfo('template_directory'); */?>/images/play-btn.png" /></a>
-			<?php /*sparkling_call_for_action(); */?>
-		</div>-->
+	<?php endif; ?>
 
-		<?php if (($_SERVER['REQUEST_URI'])=="/"): ?>
-			<div class="top-section logoslider">
-				<?php echo do_shortcode( '[gs_logo]' ); ?>
-			</div>
-		<?php endif; ?>
+	<div class="start-today-mobile">
+		<a href="http://pricingplan.npfulfilment.com/">
+			<span>START TODAY!</span>
+		</a>
+	</div>
 
-
-		<div class="start-today-mobile">
-			<a href="http://pricingplan.npfulfilment.com/">
-				<span>START TODAY!</span>
-			</a>
-		</div>
-
-		<!--<div class="container main-content-area">
-			<?php /*$layout_class = get_layout_class(); */?>
-			<div class="row <?php /*echo $layout_class; */?>">
-				<div class="main-content-inner <?php /*echo sparkling_main_content_bootstrap_classes(); */?>">
-				-->
+	<?php $current_template= basename(get_page_template()); ?>	
+	<?php if (($current_template=="page.php") || ($current_template=="page-simple-category-slider.php")): ?>
+		<div id="content" class="site-content">
+			<div class="container main-content-area">
+				<?php $layout_class = get_layout_class(); ?>
+				<div class="row <?php echo $layout_class; ?>">
+					<div class="main-content-inner <?php echo sparkling_main_content_bootstrap_classes(); ?>">
+	<?php endif; ?>

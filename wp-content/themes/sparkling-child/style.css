@@ -70,6 +70,26 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 	color: #007dc2;
 }
 
+a {
+	color: #666666;
+	text-decoration: none;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+}
+.navbar-default .navbar-nav .current-menu-ancestor a.dropdown-toggle {
+	color: white;
+	background-color: transparent;
+}
+
+.dropdown-menu>.active>a,
+.dropdown-menu>.active>a:hover,
+.dropdown-menu>.active>a:focus {
+	background-color: #0172ae;
+	color: #fff;
+}
+
 /*----------------------------------------------- */
 
 /*top page title*/
@@ -2074,6 +2094,107 @@ ul.checkmarkgreen{
 	content: " *";
 	color: red;
 }
+
+/*!*-----------------------------------------------*/
+/*our service page */
+/*----------------------------------------------- *!*/
+#ourservicemenu ul {
+	margin: 0px;
+	padding: 0px;
+}
+#ourservicemenu ul li {
+	list-style-type: none;
+	line-height: 45px;
+	background-color: #f7f7f7;
+	border-right: 1px solid #eaeaea;
+	border-bottom: 1px solid #eaeaea;
+	border-lef: 1px solid #eaeaea;
+	padding-left: 10%;
+
+}
+
+#ourservicemenu  ul li:hover{
+	color: #007dc2 !important;
+	background-color: white;
+}
+#ourservicemenu  ul li a:hover,
+#ourservicemenu .current_page_item a {
+	color: #007dc2;
+	background-color: white;
+}
+#ourservicemenu .current_page_item{
+	border-bottom: 1px solid #007dc2;
+	background-color: white;
+}
+
+#ourservicemenu .header{
+	border-bottom: 1px solid #007dc2;
+	/*background-color: #0172ae;*/
+	height: 158px;
+	background:#0172ae url(images/ourservicetitle.png) no-repeat center right;
+	padding-top: 30%;
+}
+#ourservicemenu .header p{
+	color: #ffffff;
+	font-family: geomanistBook, sans-serif;
+	font-size: 19px;
+	text-transform: uppercase;
+	padding-left: 10%;
+
+}
+
+.service-image {
+	position: relative;
+	width: 100%; /* for IE 6 */
+}
+
+.service-image h2 {
+	position: absolute;
+	top: 0px;
+	left: 0;
+	width: 100%;
+	line-height: 110px;
+	padding: 0px;
+	margin: 0px;
+}
+.service-image h2 p {
+	color: white;
+	width: 100%;
+	background: rgb(0, 0, 0); /* fallback color */
+	background: rgba(0, 0, 0, 0.7);
+	padding-left: 2%;
+	font-family: geomanistLight, sans-serif;
+	font-size: 30px;
+	text-transform: uppercase;
+}
+.zeromp{
+	margin-top:0px;
+	padding-top: 0px;
+}
+
+.ourservice-content h5 {
+	font-family: geomanistRegular, sans-serif;
+	font-size: 22px;
+	color: #007dc2;
+	padding-top: 2%;
+	padding-bottom: 2%;
+}
+
+
+
+/*#ourservicemenu li.page_item {*/
+	/*font-family: geomanistRegular, sans-serif;*/
+	/*font-size: 17px;*/
+	/*height: 50px;*/
+/*}*/
+
+/*.list-group.panel > .list-group-item {*/
+	/*border-bottom-right-radius: 4px;*/
+	/*border-bottom-left-radius: 4px*/
+/*}*/
+/*.list-group-submenu {*/
+	/*margin-left:20px;*/
+/*}*/
 
 /*!*-----------------------------------------------*/
 /*mobile -responsive*/
