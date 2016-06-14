@@ -82,7 +82,7 @@
 					<?php endif; // header image was removed (again) ?>
 
 					<div class="header-get-started">
-						<a href="http://pricingplan.npfulfilment.com/">
+						<a href="/pricing">
 							<span>GET STARTED</span>
 						</a>
 					</div>

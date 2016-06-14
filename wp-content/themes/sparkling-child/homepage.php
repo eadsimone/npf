@@ -29,13 +29,6 @@
 		</div>
 	</section>
 
-	<section class="content-shiping" id="content-shiping">
-		<div class="container">
-			<?php if (function_exists('dynamic_sidebar') && dynamic_sidebar('Content Shiping')) : else : ?>
-			<?php endif; ?>
-		</div>
-	</section>
-
 	<section class="ourservices" id="ourservices">
 		<div class="container">
 			<?php if (function_exists('dynamic_sidebar') && dynamic_sidebar('Content Our Services')) : else : ?>
