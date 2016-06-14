@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Simple(no sidebar)
+ * Template Name: Simple¬footerslider¬sidebar
  *
  * This is the template that displays full width page without sidebar
  *

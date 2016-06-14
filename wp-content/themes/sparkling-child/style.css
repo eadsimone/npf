@@ -1653,9 +1653,14 @@ div.position{
 .half {
 	width: 49% !important;
 }
+#contacus-orderpricing h1.about-entry-title,
+#contacus-maps h1.about-entry-title,
+#contacus-form h1.about-entry-title {
+	text-align: center;
+}
 
 h1.about-entry-title{
-	text-align: center;
+	text-align: left;
 	color: #666666;
 }
 .title-form p{
@@ -2072,6 +2077,7 @@ ul.checkmarkgreen{
 	font-size: 30px;
 	font-weight: normal;
 }
+
 
 #contacus-form-princing input {
 	height: 60px;

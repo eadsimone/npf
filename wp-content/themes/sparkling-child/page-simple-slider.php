@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Simple with Slider
+ * Template Name: Simple with Slider No SideBar
  *
  * This is the template that displays full width page without sidebar
  *
