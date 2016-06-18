@@ -42,7 +42,7 @@
 		<div class="scroll-to-top"><i class="fa fa-angle-up"></i></div><!-- .scroll-to-top -->
 	</footer><!-- #colophon -->
 </div>
-<!--</div><!-- #page -->-->
+<!--</div><!-- #page -->
 
 <script>
 	$(function() {
@@ -119,6 +119,31 @@
 	})
 
 </script>
+<script>
+	$(function() {
+		var menu3,
+			position;
+		$('.accordions .accordion-header').on('click', function() {
+			menu3 = $(this).parent().find('.accordion-details');
+			if( menu3.is(':hidden') ) {
+				$('.accordion-details').slideUp();
+				$('.accordion-header').removeClass('arrow-up');
+				$(this).addClass('arrow-up');
+				menu3.slideDown( function(){
+					position = $(this).position();
+					$("html, body").delay(200).animate({ scrollTop: (position.top - 72) });
+					console.log(position.top);
+				});
+
+
+			} else {
+				menu3.slideUp().removeClass('arrow-up');
+				$(this).removeClass('arrow-up');
+			}
+		});
+	});
+</script>
+
 
 <?php wp_footer(); ?>
 

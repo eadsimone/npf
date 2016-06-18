@@ -48,7 +48,7 @@
 					</div>
 				</div>
 				<div class="col-lg-5">
-					<p><a class="btn btn-lg btn-success" href="#" role="button">GET STARTED TODAY!</a></p>
+					<p><a class="btn btn-lg btn-success" href="/pricing" role="button">GET STARTED TODAY!</a></p>
 				</div>
 			</div>
 		</div>
