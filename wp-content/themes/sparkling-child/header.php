@@ -131,7 +131,7 @@
 	<?php endif; ?>
 
 	<div class="start-today-mobile">
-		<a href="http://pricingplan.npfulfilment.com/">
+		<a href="pricing/">
 			<span>START TODAY!</span>
 		</a>
 	</div>
