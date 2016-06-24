@@ -2530,3 +2530,49 @@ ul.checkmarkgreen{
 		text-align: center;
 	}
 }
+
+/*thank you page*/
+.thankyou-yellow {
+	background-color: #ffb300;
+	text-align: center;
+	padding: 1%;
+	margin-bottom: 3%;
+}
+
+.thankyou-yellow h1 {
+	color: #ffffff;
+}
+
+.row.thankyou {
+	border-width: 2px;
+	border-style: dashed;
+	border-color: #d7d7d7;
+	padding: 1% 1% 5% 1%;
+	margin-bottom: 10%;
+}
+
+.checkmark span {
+	font-size: 14px;
+	list-style-type: none;
+	margin-bottom: 1em;
+	padding: 0.25em 0 0 2.5em;
+	position: relative;
+	color: #ffffff;
+	text-align: left !important;
+}
+.checkmark span:after {
+	content: " ";
+	display: block;
+	width: 0.3em;
+	height: 0.6em;
+	border: solid #ffffff;
+	border-width: 0 0.2em 0.2em 0;
+	position: absolute;
+	left: 1em;
+	top: 40%;
+	margin-top: -0.2em;
+	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	-o-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
