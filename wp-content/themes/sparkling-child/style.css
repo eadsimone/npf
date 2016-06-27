@@ -2576,3 +2576,15 @@ ul.checkmarkgreen{
 	-o-transform: rotate(45deg);
 	transform: rotate(45deg);
 }
+
+/****blogpage*/
+
+#main article div.blog-item-wrap a img  {
+	width:50%;
+	height: 300px;
+	float: right;
+}
+.posted-on {
+	border: 1px solid #666666;
+	padding: 1%;
+}

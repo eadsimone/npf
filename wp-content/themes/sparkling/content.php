@@ -53,6 +53,7 @@
 						'echo'              => 1
 		       		) );
 		    	?>
+				<div>Read More </div>
 			</div><!-- .entry-content -->
 			<?php endif; ?>
 		</div>

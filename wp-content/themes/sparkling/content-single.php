@@ -41,6 +41,7 @@
 	       		) );
 	    	?>
 		</div><!-- .entry-content -->
+		<div>Read More </div>
 
 		<footer class="entry-meta">
 
