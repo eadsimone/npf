@@ -2414,6 +2414,13 @@ ul.checkmarkgreen{
 /*mobile -responsive*/
 /*----------------------------------------------- *!*/
 
+@media (max-width: 992px) {
+
+	#contacus-maps .col-xs-12.col-sm-12.col-md-4.col-lg-4 {
+		display: flex;
+		justify-content: center;
+	}
+}
 
 @media (max-width: 768px) {
 	.header-info-top,
@@ -2462,8 +2469,6 @@ ul.checkmarkgreen{
 		font-size: 1em;
 		max-width: 50%;
 	}
-
-
 }
 
 /*end page resources*/
@@ -2529,6 +2534,17 @@ ul.checkmarkgreen{
 	.get-started-today-bar .container .col-lg-5 p {
 		text-align: center;
 	}
+	.half {
+		width: 100% !important;
+	}
+	.container .jumbotron.bottom {
+		padding-right: 8%;
+		padding-left: 8%;
+		text-align: center;
+	}
+	.jumbotron.bottom .btn-success {
+		min-width: 225px;
+	}
 }
 
 /*thank you page*/
@@ -2541,6 +2557,9 @@ ul.checkmarkgreen{
 
 .thankyou-yellow h1 {
 	color: #ffffff;
+	font-family: geomanistRegular, sans-serif;
+	font-size: 20px;
+	font-style: normal;
 }
 
 .row.thankyou {
@@ -2551,28 +2570,21 @@ ul.checkmarkgreen{
 	margin-bottom: 10%;
 }
 
-.checkmark span {
-	font-size: 14px;
-	list-style-type: none;
-	margin-bottom: 1em;
-	padding: 0.25em 0 0 2.5em;
-	position: relative;
-	color: #ffffff;
-	text-align: left !important;
+.thanyoutext h1 {
+	font-family: geomanistLight, sans-serif;
+	font-size: 30px;
+	font-style: normal;
+	color: #023f88;
+	margin-bottom: 5%;
 }
-.checkmark span:after {
-	content: " ";
-	display: block;
-	width: 0.3em;
-	height: 0.6em;
-	border: solid #ffffff;
-	border-width: 0 0.2em 0.2em 0;
-	position: absolute;
-	left: 1em;
-	top: 40%;
-	margin-top: -0.2em;
-	-webkit-transform: rotate(45deg);
-	-moz-transform: rotate(45deg);
-	-o-transform: rotate(45deg);
-	transform: rotate(45deg);
+.thanyoutext p {
+	font-family: geomanistRegular, sans-serif;
+	font-size: 16px;
+	font-style: normal;
 }
+.mc4wp-alert.mc4wp-notice{
+	color: red;
+	font-size: 16px;
+	text-align: center;
+}
+/*end thank you page*/
