@@ -2133,8 +2133,28 @@ ul.checkmarkgreen{
 	padding-left: 25px;
 }
 
+#contacus-form-princing input#mc-embedded-subscribe {
+	height: 60px;
+	font-family: geomanistMedium, sans-serif;
+	font-size: 18px;
+	letter-spacing: 2px;
+	color: #ffffff;
+	padding-left: 0px;
+}
+
+#contacus-form-princing input#mc-embedded-subscribe.iconfly{
+	background: #ffb300 url("/wp-content/uploads/2016/05/flyicon.png") no-repeat 20% center;
+	margin-right: 5%;
+	padding-left: 5%;
+}
+
+
 #contacus-form-princing .container .jumbotron.bottom {
 	background-color: transparent;
+	padding:0%;
+	text-align: center;
+	display: flex;
+	justify-content: center;
 }
 
 .heigh136 {
