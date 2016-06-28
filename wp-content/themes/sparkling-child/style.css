@@ -2577,6 +2577,7 @@ ul.checkmarkgreen{
 	color: #023f88;
 	margin-bottom: 5%;
 }
+
 .thanyoutext p {
 	font-family: geomanistRegular, sans-serif;
 	font-size: 16px;
@@ -2588,3 +2589,150 @@ ul.checkmarkgreen{
 	text-align: center;
 }
 /*end thank you page*/
+
+/*.checkmark span:after {*/
+	/*content: " ";*/
+	/*display: block;*/
+	/*width: 0.3em;*/
+	/*height: 0.6em;*/
+	/*border: solid #ffffff;*/
+	/*border-width: 0 0.2em 0.2em 0;*/
+	/*position: absolute;*/
+	/*left: 1em;*/
+	/*top: 40%;*/
+	/*margin-top: -0.2em;*/
+	/*-webkit-transform: rotate(45deg);*/
+	/*-moz-transform: rotate(45deg);*/
+	/*-o-transform: rotate(45deg);*/
+	/*transform: rotate(45deg);*/
+/*}*/
+
+/****blogpage*/
+
+#main article div.blog-item-wrap a img  {
+	width:50%;
+	height: 300px;
+	float: right;
+}
+/*#main article .blog-item-wrap .post-inner-content{*/
+	/*width: 50%;*/
+/*}*/
+
+.posted-on {
+	border: 1px solid #f1f0f0;
+	padding: 1%;
+}
+
+.post-inner-content  .entry-header.page-header h2.entry-title a {
+	font-family: geomanistRegular, sans-serif;
+	font-size: 28px;
+	font-style: normal;
+	color: #007dc2;
+}
+
+.blog-item-wrap .post-inner-content div.entry-content {
+	font-family: geomanistRegular, sans-serif;
+	font-size: 14px;
+	font-style: normal;
+	color: #666666;
+}
+.entry-meta a {
+	font-family: geomanistRegular, sans-serif;
+	font-size: 16px;
+	text-transform: uppercase;
+	color: #999999;
+}
+
+.entry-meta span.author.vcard a{
+	font-size: 15px;
+	text-transform: capitalize;
+	color: #007dc2;
+}
+
+article div.blog-item-wrap {
+	padding: 2%;
+	border: 3px solid #f7f7f7;
+}
+
+.readmore-post {
+	min-width: 115px;
+	background-color: #f7f7f7;
+	border-radius: 4px;
+	width: 10%;
+	display: flex;
+	justify-content: center;
+	padding: 2%;
+	margin: 0 auto;
+}
+.readmore-post a{
+	font-family: geomanistRegular, sans-serif;
+	font-size: 12px;
+	text-transform: uppercase;
+	color: #999999;
+	text-align: center;
+}
+
+.readmore-post a span{
+	color: #ffb300;
+}
+
+.post-navigation a:hover, .paging-navigation a:hover {
+	background: #0274b2;
+}
+
+/*search right side bar */
+.form-control.search-query::-moz-placeholder {
+	color: #fff;
+	background-color: #0274b2;
+	padding-left: 1%;
+}
+input.form-control.search-query {
+	height: 36px;
+}
+
+.btn-default, .label-default, .woocommerce #respond input#submit, .woocommerce a.button, .woocommerce button.button, .woocommerce input.button, .woocommerce #respond input#submit.alt, .woocommerce a.button.alt, .woocommerce button.button.alt, .woocommerce input.button.alt {
+	background-color: #0274b2;
+	border-color: #0274b2;
+	-webkit-transition: background-color 0.3s linear;
+	-moz-transition: background-color 0.3s linear;
+	-o-transition: background-color 0.3s linear;
+	transition: background-color 0.3s linear;
+}
+
+/*page navigation*/
+.pagination > li > a, .pagination > li > span, .pagination > li > a:focus, .pagination > li > a:hover, .pagination > li > span:focus, .pagination > li > span:hover {
+	font-family: geomanistRegular, sans-serif;
+	font-size: 16px;
+	text-transform: uppercase;
+	color: #999999;
+}
+.navigation .wp-pagenavi-pagination span.current, .navigation .wp-pagenavi-pagination a:hover{
+	color: #ffffff;
+}
+.navigation .wp-pagenavi-pagination span.current, .navigation .wp-pagenavi-pagination a{
+	border:2px solid #f7f7f7;
+}
+.navigation .wp-pagenavi-pagination span.current, .navigation .wp-pagenavi-pagination a:hover {
+	background-color: #999999;
+	border-color: #999999;
+	color: #FFF;
+	text-decoration: none;
+}
+.navigation .wp-pagenavi-pagination span {
+	font-size: 16px;
+}
+.pagination > li > a, .pagination > li > span {
+	padding: 9px 17px;
+	margin-left: 7px;
+}
+
+ul.pagination.pagination-centered.wp-pagenavi-pagination li:first-child {
+	display: none;
+}
+
+.title-top-section .container {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	min-height: 150px;
+}

@@ -7,48 +7,48 @@
  * @package sparkling
  */
 ?>
-<!doctype html>
-<!--[if !IE]>
-<html class="no-js non-ie" <?php language_attributes(); ?>> <![endif]-->
-<!--[if IE 7 ]>
-<html class="no-js ie7" <?php language_attributes(); ?>> <![endif]-->
-<!--[if IE 8 ]>
-<html class="no-js ie8" <?php language_attributes(); ?>> <![endif]-->
-<!--[if IE 9 ]>
-<html class="no-js ie9" <?php language_attributes(); ?>> <![endif]-->
-<!--[if gt IE 9]><!-->
+	<!doctype html>
+	<!--[if !IE]>
+	<html class="no-js non-ie" <?php language_attributes(); ?>> <![endif]-->
+	<!--[if IE 7 ]>
+	<html class="no-js ie7" <?php language_attributes(); ?>> <![endif]-->
+	<!--[if IE 8 ]>
+	<html class="no-js ie8" <?php language_attributes(); ?>> <![endif]-->
+	<!--[if IE 9 ]>
+	<html class="no-js ie9" <?php language_attributes(); ?>> <![endif]-->
+	<!--[if gt IE 9]><!-->
 <html class="no-js" <?php language_attributes(); ?>> <!--<![endif]-->
-<head>
-	<meta charset="<?php bloginfo( 'charset' ); ?>">
-	<?php if (isset($_SERVER['HTTP_USER_AGENT']) && (strpos($_SERVER['HTTP_USER_AGENT'], 'MSIE') !== false)) header('X-UA-Compatible: IE=edge,chrome=1'); ?>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="profile" href="http://gmpg.org/xfn/11">
-	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
+	<head>
+		<meta charset="<?php bloginfo( 'charset' ); ?>">
+		<?php if (isset($_SERVER['HTTP_USER_AGENT']) && (strpos($_SERVER['HTTP_USER_AGENT'], 'MSIE') !== false)) header('X-UA-Compatible: IE=edge,chrome=1'); ?>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="profile" href="http://gmpg.org/xfn/11">
+		<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 
-	<link rel="stylesheet" href="//code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css" />
-	<link rel="author" href="https://plus.google.com/u/0/114616192538585348803/posts" />
+		<link rel="stylesheet" href="//code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css" />
+		<link rel="author" href="https://plus.google.com/u/0/114616192538585348803/posts" />
 
-	<script src="<?php bloginfo('template_directory'); ?>/js/jquery-1.10.2.min.js"></script>
-	<script src="<?php bloginfo('template_directory'); ?>/js/jquery.slides.min.js"></script>
+		<script src="<?php bloginfo('template_directory'); ?>/js/jquery-1.10.2.min.js"></script>
+		<script src="<?php bloginfo('template_directory'); ?>/js/jquery.slides.min.js"></script>
 
-	<?php wp_head(); ?>
+		<?php wp_head(); ?>
 
-</head>
+	</head>
 
 <body <?php body_class(); ?>>
 
-<!-- Google Tag Manager -->
-<noscript>
-	<iframe src="//www.googletagmanager.com/ns.html?id=GTM-WQNSNR" height="0" width="0" style="display:none;visibility:hidden"></iframe>
-</noscript>
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-		new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-		j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-		'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-	})(window,document,'script','dataLayer','GTM-WQNSNR');</script>
-<!-- End Google Tag Manager -->
+	<!-- Google Tag Manager -->
+	<noscript>
+		<iframe src="//www.googletagmanager.com/ns.html?id=GTM-WQNSNR" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+	</noscript>
+	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+			new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+			j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+			'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+		})(window,document,'script','dataLayer','GTM-WQNSNR');</script>
+	<!-- End Google Tag Manager -->
 
-<a class="sr-only sr-only-focusable" href="#content">Skip to main content</a>
+	<a class="sr-only sr-only-focusable" href="#content">Skip to main content</a>
 <div id="page" class="hfeed site">
 
 	<header id="masthead" class="site-header" role="banner">
@@ -116,19 +116,25 @@
 
 	<!--	<div id="content" class="site-content">-->
 
-	<?php $current_url =$_SERVER['REQUEST_URI']; ?>
-	<?php if ($current_url=="/"): ?>
-		<div class="top-section logoslider">
-			<?php sparkling_featured_slider(); ?>
-			<?php echo do_shortcode( '[gs_logo]' ); ?>
+<?php $current_url =$_SERVER['REQUEST_URI']; ?>
+<?php if ($current_url=="/"): ?>
+	<div class="top-section logoslider">
+		<?php sparkling_featured_slider(); ?>
+		<?php echo do_shortcode( '[gs_logo]' ); ?>
+	</div>
+<?php elseif ($current_url=="/blog/"): ?>
+	<div class="title-top-section">
+		<div  class="container">
+			<?php echo  "Blog"; ?>
 		</div>
-	<?php else: ?>
-		<div class="title-top-section">
-			<div  class="container">
-				<?php echo  get_the_title(); ?>
-			</div>
+	</div>
+<?php else: ?>
+	<div class="title-top-section">
+		<div  class="container">
+			<?php echo  strip_tags(get_the_title()); ?>
 		</div>
-	<?php endif; ?>
+	</div>
+<?php endif; ?>
 
 	<div class="start-today-mobile">
 		<a href="pricing/">
@@ -136,11 +142,11 @@
 		</a>
 	</div>
 
-	<?php $current_template= basename(get_page_template()); ?>	
-	<?php if (($current_template=="page.php") || ($current_template=="page-simple-category-slider.php")): ?>
-		<div id="content" class="site-content">
-			<div class="container main-content-area">
-				<?php $layout_class = get_layout_class(); ?>
-				<div class="row <?php echo $layout_class; ?>">
-					<div class="main-content-inner <?php echo sparkling_main_content_bootstrap_classes(); ?>">
-	<?php endif; ?>
+<?php $current_template= basename(get_page_template()); ?>
+<?php if (($current_template=="page.php") || ($current_template=="page-simple-category-slider.php")): ?>
+	<div id="content" class="site-content">
+	<div class="container main-content-area">
+	<?php $layout_class = get_layout_class(); ?>
+<div class="row <?php echo $layout_class; ?>">
+<div class="main-content-inner <?php echo sparkling_main_content_bootstrap_classes(); ?>">
+<?php endif; ?>

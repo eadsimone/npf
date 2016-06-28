@@ -9,7 +9,7 @@
 				<a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>" >
 			 	<?php the_post_thumbnail( 'sparkling-featured', array( 'class' => 'single-featured' )); ?>
 			</a>
-		<div class="post-inner-content">
+		<div class="post-inner-content"> 
 			<header class="entry-header page-header">
 
 				<h2 class="entry-title"><a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_title(); ?></a></h2>
@@ -53,6 +53,7 @@
 						'echo'              => 1
 		       		) );
 		    	?>
+				<div class="readmore-post"><a class="" href="<?php the_permalink(); ?>">Read More<span class="glyphicon glyphicon-menu-right"></span></a></div>
 			</div><!-- .entry-content -->
 			<?php endif; ?>
 		</div>

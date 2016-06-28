@@ -40,6 +40,7 @@
 					'echo'              => 1
 	       		) );
 	    	?>
+			<div class="readmore-post"><a class="" href="<?php the_permalink(); ?>">Read More<span class="glyphicon glyphicon-menu-right"></span></a></div>
 		</div><!-- .entry-content -->
 
 		<footer class="entry-meta">
