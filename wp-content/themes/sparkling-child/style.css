@@ -1902,38 +1902,7 @@ h1.about-entry-title{
 	opacity: 0.4;
 	filter: alpha(opacity=40); /* For IE8 and earlier */
 }
-/*is not using*/
-/*.rotate {*/
-/*!* Safari *!*/
-/*-webkit-transform: rotate(-90deg);*/
-/*!* Firefox *!*/
-/*-moz-transform: rotate(-90deg);*/
-/*!* IE *!*/
-/*-ms-transform: rotate(-90deg);*/
-/*!* Opera *!*/
-/*-o-transform: rotate(-90deg);*/
-/*!* Internet Explorer *!*/
-/*filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);*/
-/*}
-.verticaltext {
-	position: relative;
-	padding-left:50px;
-	margin:1em 0;
-	min-height:120px;
-}
 
-.verticaltext_content {
-	-webkit-transform: rotate(-90deg);
-	-moz-transform: rotate(-90deg);
-	-ms-transform: rotate(-90deg);
-	-o-transform: rotate(-90deg);
-	filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
-	position: absolute;
-	color: #FFF;
-	font-family: geomanistMedium, sans-serif;
-	font-size: 14px;
-}
-*/
 .vertical-group-row {
 	width: 38px;
 }
@@ -2012,6 +1981,9 @@ ul.checkmarkgreen{
 	color: #666666;
 	line-height: 20px;
 
+	white-space: nowrap;
+	overflow:hidden;
+	text-overflow: ellipsis;
 }
 
 .weguaratpos {
@@ -2293,19 +2265,6 @@ ul.checkmarkgreen{
 	padding-top: 2%;
 }
 
-/*#ourservicemenu li.page_item {*/
-/*font-family: geomanistRegular, sans-serif;*/
-/*font-size: 17px;*/
-/*height: 50px;*/
-/*}*/
-
-/*.list-group.panel > .list-group-item {*/
-/*border-bottom-right-radius: 4px;*/
-/*border-bottom-left-radius: 4px*/
-/*}*/
-/*.list-group-submenu {*/
-/*margin-left:20px;*/
-/*}*/
 /*flex slider*/
 .flex-caption h2 {
 	background-color: transparent;
@@ -2542,6 +2501,12 @@ ul.checkmarkgreen{
 		font-size: 1em;
 		max-width: 50%;
 	}
+	#contacus-form-princing input.onethird,
+	#contacus-form-princing textarea.onethird,
+	#contacus-form-princing input {
+	width: 100% !important;
+	}
+
 }
 
 @media only screen and (max-width: 550px) {
