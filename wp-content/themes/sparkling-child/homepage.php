@@ -35,19 +35,19 @@
 			<?php endif; ?>
 		</div>
 	</section>
-
+	
 	<section class="get-started-today-bar" id="get-started-today-bar">
 		<div class="container">
 			<div class="row">
-				<div class="col-lg-5">
+				<div class="col-xs-12 col-sm-12 col-md-5 col-lg-5">
 					<p>We’re dedicated to offering the fastest <br>and most accurate services.</p>
 				</div>
-				<div class="col-lg-2">
+				<div class="col-xs-12 col-sm-12 col-md-2 col-lg-2">
 					<div class="">
 						<img src="../wp-content/uploads/2016/04/ctalogo.png">
 					</div>
 				</div>
-				<div class="col-lg-5">
+				<div class="col-xs-12 col-sm-12 col-md-5 col-lg-5">
 					<p><a class="btn btn-lg btn-success" href="/pricing" role="button">GET STARTED TODAY!</a></p>
 				</div>
 			</div>

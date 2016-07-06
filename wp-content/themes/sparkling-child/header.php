@@ -28,8 +28,8 @@
 		<link rel="stylesheet" href="//code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css" />
 		<link rel="author" href="https://plus.google.com/u/0/114616192538585348803/posts" />
 
-		<script src="<?php bloginfo('template_directory'); ?>/js/jquery-1.10.2.min.js"></script>
-		<script src="<?php bloginfo('template_directory'); ?>/js/jquery.slides.min.js"></script>
+		<script async src="<?php bloginfo('template_directory'); ?>/js/jquery-1.10.2.min.js"></script>
+		<script async src="<?php bloginfo('template_directory'); ?>/js/jquery.slides.min.js"></script>
 
 		<?php wp_head(); ?>
 

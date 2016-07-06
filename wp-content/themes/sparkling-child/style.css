@@ -14,10 +14,6 @@ Version:        1
 	font-family: 'geomanistBook';
 	src: url('./fonts/geom_ff/Geomanist-Book.otf');
 }
-/*@font-face {*/
-/*font-family: 'geomanistBookItalic';*/
-/*src: url('./fonts/geom_ff/Geomanist-Book.otf');*/
-/*}*/
 @font-face {
 	font-family: 'geomanistthin_italic';
 	src: url('./fonts/geom_ff/geomanist-thin-italic-webfont.eot');
@@ -2507,6 +2503,26 @@ ul.checkmarkgreen{
 	width: 100% !important;
 	}
 
+	.testimonials-video .textwidget .col-lg-3.col-sm-3.team-box div,
+	.testimonials-video .textwidget .col-lg-3.col-sm-3.textderecha,
+	.testimonials-video .textwidget .col-lg-3.col-sm-3.textizquierda {
+		display: flex;
+		justify-content: center;
+		margin: 0% 0% 12% 0%;
+	}
+	.get-started-today-bar .row {
+		margin-right: 0px;
+		margin-left: 0px;
+	}
+
+	.get-started-today-bar .row div{
+		display: flex;
+		justify-content: center;
+	}
+	.get-started-today-bar .container .btn.btn-lg.btn-success {
+		padding: 4% 20% 4% 10%;
+	}
+
 }
 
 @media only screen and (max-width: 550px) {
@@ -2537,6 +2553,11 @@ ul.checkmarkgreen{
 	}
 	.jumbotron.bottom .btn-success {
 		min-width: 225px;
+		padding: 6% 6%;
+	}
+	.content-shiping .col-lg-6.col-sm-6 {
+		float: right;
+		padding-top: 18%;
 	}
 }
 
@@ -2591,9 +2612,6 @@ ul.checkmarkgreen{
 	height: 300px;
 	float: right;
 }
-/*#main article .blog-item-wrap .post-inner-content{*/
-/*width: 50%;*/
-/*}*/
 
 .posted-on {
 	border: 1px solid #f1f0f0;
@@ -2684,11 +2702,7 @@ input.form-control.search-query {
 input.form-control.search-query::-webkit-input-placeholder { /* Chrome */
 	color: white;
 }
-/*input.form-control.search-query:after{*/
-/*color: #fff;*/
-/*background-color: #0274b2;*/
-/*padding-left: 1%;*/
-/*}*/
+
 .form-control.search-query::-moz-placeholder {
 	color: #fff;
 	background-color: #0274b2;
