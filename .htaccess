@@ -13,6 +13,17 @@ RewriteRule ^index\.php$ - [L]
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule . /index.php [L]
+
+# Redirect old file path to new file path
+#Redirect /our-servicescateg/ /newdirectory/newfile.html
+#Redirect 301 ^/our-services/?$ /our-services/product-fulfilment/
+RedirectMatch 301 ^/our-services/?$ /our-services/product-fulfilment/
+
+RedirectMatch 301 ^/slider1/?$ /our-services/product-fulfilment/
+RedirectMatch 301 ^/slider2/?$ /our-services/3pl/
+RedirectMatch 301 ^/slider3/?$ /computer-integration/
+RedirectMatch 301 ^/slider4/?$ /our-services/returns-management/
+
 </IfModule>
 
 <IfModule mod_headers.c>
