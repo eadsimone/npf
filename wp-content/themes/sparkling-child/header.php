@@ -25,11 +25,13 @@
 		<link rel="profile" href="http://gmpg.org/xfn/11">
 		<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 
-		<link rel="stylesheet" href="//code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css" />
+		<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/inc/css/jquery-ui.css" />
+<!--		<link rel="stylesheet" href="//code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css" />		-->
 		<link rel="author" href="https://plus.google.com/u/0/114616192538585348803/posts" />
 
-		<script async src="<?php bloginfo('template_directory'); ?>/js/jquery-1.10.2.min.js"></script>
-		<script async src="<?php bloginfo('template_directory'); ?>/js/jquery.slides.min.js"></script>
+		<!--take off async-->
+		<script  src="<?php bloginfo('template_directory'); ?>/js/jquery-1.10.2.min.js"></script>
+		<script  src="<?php bloginfo('template_directory'); ?>/js/jquery.slides.min.js"></script>
 
 		<?php wp_head(); ?>
 

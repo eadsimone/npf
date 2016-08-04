@@ -75,5 +75,34 @@ if (function_exists('register_sidebar')) {
     ));
 }
 
+// Talking Guy
+if (function_exists('register_sidebar')) {
+    register_sidebar(array(
+        'name' => 'Talking Guy',
+        'id'   => 'talking-guy',
+        'description'   => 'Talking Guy',
+        'before_widget' => '',
+        'after_widget'  => '',
+        'before_title'  => '',
+        'after_title'   => ''
+    ));
+}
+
+function is_child($pageID) {
+    global $post;
+    if( is_page() && ($post->post_parent==$pageID) ) {
+        return true;
+    } else {
+        return false;
+    }
+}
+
+// Get the id of a page by its name
+function get_page_id($page_name){
+    global $wpdb;
+    $page_name = $wpdb->get_var("SELECT ID FROM $wpdb->posts WHERE post_name = '".$page_name."'");
+    return $page_name;
+}
+
 //remove_action( 'the_content', "sidebar-1" );
 

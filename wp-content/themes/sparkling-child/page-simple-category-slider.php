@@ -33,6 +33,21 @@ get_header(); ?>
 
 <?php get_sidebar("npfcategory"); ?>
 
+
+<?php
+
+$page_id = get_page_id('our-services');
+
+if(is_child($page_id)) {
+	if ( is_child($page_id) ) {
+		//Talking Guy Widget Here
+		if (function_exists('dynamic_sidebar') && dynamic_sidebar('Talking Guy')) : else :
+			// fallback here
+		endif;
+	}
+}
+?>
+
 <?php get_footer(); ?>
 
 <script>
