@@ -8,7 +8,7 @@
  */
 ?>
 <?php $current_template= basename(get_page_template()); ?>
-<?php if (($current_template=="page.php") || ($current_template=="page-simple-category-slider.php")): ?>
+<?php if (($current_template=="page.php") || ($current_template=="page-simple-category-slider.php") ||($current_template=="page-product.php")): ?>
 		</div><!-- close .row -->
 	</div><!-- close .container -->
 </div><!-- close .site-content -->

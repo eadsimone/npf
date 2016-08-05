@@ -2453,3 +2453,10 @@ ul.pagination.pagination-centered.wp-pagenavi-pagination li:first-child {
 #secondary .widget a {
     color: #666;
 }
+/*product page*/
+.product-meta-container {
+    background: none repeat scroll 0 0 #f8f8f8;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+}
