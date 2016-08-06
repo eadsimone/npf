@@ -9,8 +9,14 @@ Version:        1
 */
 @import url(../sparkling/style.css);
 
-.entry-title,.navbar-nav,.title-top-section {
+.about-entry-title,.entry-title,.navbar-nav,.navbar.navbar-white,.team-member h3,.title-top-section {
     text-transform: uppercase;
+}
+
+.informationfield,.title-top-section .container {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
 .header-get-started a,.round-button a,a {
@@ -214,7 +220,6 @@ a {
     background-color: #FFF;
     font-family: geomanistBook,sans-serif;
     font-size: 15px;
-    text-transform: uppercase;
     color: #fff;
     height: 65px;
     margin-bottom: 0;
@@ -235,15 +240,17 @@ a {
 
 .navbar-default .navbar-nav>li>a {
     color: #FFF;
-    line-height: 20px;
+    line-height: 10px;
     margin: 10px;
+    border-radius: 5px;
+    transition-duration: 0s;
+    border: 2px solid rgba(255,255,255,0);
 }
 
 .navbar-default .navbar-nav>.active>a,.navbar-default .navbar-nav>.active>a:focus,.navbar-default .navbar-nav>.active>a:hover,.navbar-default .navbar-nav>.open>a,.navbar-default .navbar-nav>.open>a:focus,.navbar-default .navbar-nav>.open>a:hover,.navbar-default .navbar-nav>li>a:focus,.navbar-default .navbar-nav>li>a:hover {
     color: #FFF;
     border-radius: 5px;
     border: 2px solid #fff;
-    /*padding: 8px 12px;*/
     transition-duration: 0s;
     line-height: 10px;
 }
@@ -359,7 +366,6 @@ h2.our-guarantee {
 .row.our-guarantee .row {
     border-style: solid;
     border-color: #e5e6e6;
-    border-width: 2px 2px 0;
     border-width: 2px 2px 0;
 }
 
@@ -633,11 +639,16 @@ svg.dotted.round {
     opacity: .5;
     filter: alpha(opacity=40);
 }
-
+.activecircletest,
 .profile-pic:hover {
     box-shadow: 0 0 0 3px #3196ce;
     opacity: 1;
     padding: 3px;
+}
+
+.team-member #pictureone.profile-pic.activecircletest,
+.team-member #pictureone.profile-pic.activecircletest img {
+    opacity: 1;
 }
 
 .team-member .profile-pic img:hover {
@@ -652,7 +663,6 @@ svg.dotted.round {
 }
 
 .team-member h3 {
-    text-transform: uppercase;
     color: #404040;
     font-weight: 700;
     font-size: 17px;
@@ -1049,7 +1059,6 @@ svg.dotted.round {
     font-family: geomanistLight,sans-serif;
     font-size: 30px;
     color: #666;
-    text-transform: uppercase;
     margin-top: 0;
     margin-bottom: 30px;
 }
@@ -1647,9 +1656,6 @@ ul.checkmarkgreen {
     font-weight: 400;
     color: #666;
     line-height: 20px;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
 }
 
 .colortable th,.pricenumber {
@@ -2402,9 +2408,6 @@ ul.pagination.pagination-centered.wp-pagenavi-pagination li:first-child {
 }
 
 .title-top-section .container {
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
     min-height: 150px;
 }
 
@@ -2453,9 +2456,9 @@ ul.pagination.pagination-centered.wp-pagenavi-pagination li:first-child {
 #secondary .widget a {
     color: #666;
 }
-/*product page*/
+
 .product-meta-container {
-    background: none repeat scroll 0 0 #f8f8f8;
+    background: #f8f8f8;
     border: 1px solid #ccc;
     padding: 10px;
     margin-bottom: 10px;

@@ -5,28 +5,33 @@
 <div data-sr-complete="true" data-sr-init="true" class="row" data-scrollreveal="enter left after 0s over 0.1s">
     <div class="col-lg-4 col-sm-4 team-box">
         <div class="team-member" >
-            <figure class="profile-pic" id="pictureone">
-                <img src="/wp-content/uploads/2016/08/default-user.jpg" alt="Uploaded image">
+            <figure class="profile-pic activecircletest" id="pictureone">
+                <img src="/wp-content/uploads/2016/08/NPF_heart.png" alt="Uploaded image">
             </figure>
         </div>
     </div>
     <div class="col-lg-4 col-sm-4 team-box">
         <div class="team-member">
             <figure class="profile-pic" id="picturetwo">
-                <img src="/wp-content/uploads/2016/08/default-user.jpg" alt="Uploaded image">
+                <img src="/wp-content/uploads/2016/08/NPF_heart.png" alt="Uploaded image">
             </figure>
         </div>
     </div>
     <div class="col-lg-4 col-sm-4 team-box">
         <div class="team-member" >
             <figure class="profile-pic" id="picturethree">
-                <img src="/wp-content/uploads/2016/08/default-user.jpg" alt="Uploaded image">
+                <img src="/wp-content/uploads/2016/08/NPF_heart.png" alt="Uploaded image">
             </figure>
         </div>
     </div>
 </div>
-<div id="clientcomment1" class="details client-comment">[testimonials ids="2356"]</div>
-<div id="clientcomment2" class="details client-comment">[testimonials ids="968"]</div>
+<!--eadit-->
+<!--<div id="clientcomment1" class="details client-comment show">[testimonials ids="2976"]</div>-->
+<!--<div id="clientcomment2" class="details client-comment">[testimonials ids="968"]</div>-->
+<!--<div id="clientcomment3" class="details client-comment">[testimonials ids="2356"]</div>-->
+<!--production-->
+<div id="clientcomment1" class="details client-comment show">[testimonials ids="2656"]</div>
+<div id="clientcomment2" class="details client-comment">[testimonials ids="2356"]</div>
 <div id="clientcomment3" class="details client-comment">[testimonials ids="969"]</div>
 <script>
     $(document).ready(function() {
@@ -36,12 +41,18 @@
         });
         $("#picturetwo").mouseover(function() {
             $( "#clientcomment2" ).addClass( "show" );
+            $( "#clientcomment1" ).removeClass( "show" );
+            $( "#pictureone" ).removeClass( "activecircletest");
         });
         $("#picturethree").mouseover(function() {
             $( "#clientcomment3" ).addClass( "show" );
+            $( "#clientcomment1" ).removeClass( "show" );
+            $( "#pictureone" ).removeClass( "activecircletest");
         });
         $("#picturefour").mouseover(function() {
             $( "#clientcomment4" ).addClass( "show" );
+            $( "#clientcomment1" ).removeClass( "show" );
+            $( "#pictureone" ).removeClass( "activecircletest");
         });
 
         /*remove class */
