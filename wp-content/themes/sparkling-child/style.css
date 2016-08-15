@@ -16,7 +16,7 @@ Version:        1
 .informationfield,.title-top-section .container {
     overflow: hidden;
     text-overflow: ellipsis;
-    white-space: nowrap;
+    /*white-space: nowrap;*/
 }
 
 .header-get-started a,.round-button a,a {
@@ -286,7 +286,7 @@ a {
     display: inline-block;
     padding: 8px 10px;
     box-shadow: 1px 1px 0 rgba(0,0,0,.3);
-    color: #fff;
+    color: #ffffff;
     float: right;
 }
 
@@ -639,19 +639,14 @@ svg.dotted.round {
     opacity: .5;
     filter: alpha(opacity=40);
 }
-.activecircletest,
-.profile-pic:hover {
+
+.activecircletest,.profile-pic:hover {
     box-shadow: 0 0 0 3px #3196ce;
     opacity: 1;
     padding: 3px;
 }
 
-.team-member #pictureone.profile-pic.activecircletest,
-.team-member #pictureone.profile-pic.activecircletest img {
-    opacity: 1;
-}
-
-.team-member .profile-pic img:hover {
+.team-member #pictureone.profile-pic.activecircletest,.team-member #pictureone.profile-pic.activecircletest img,.team-member .profile-pic img:hover {
     opacity: 1;
 }
 
@@ -2462,4 +2457,18 @@ ul.pagination.pagination-centered.wp-pagenavi-pagination li:first-child {
     border: 1px solid #ccc;
     padding: 10px;
     margin-bottom: 10px;
+}
+.started-login{
+    float: right;
+    position: relative;
+}
+.header-login{
+    text-transform: none;
+    font-size:13px ;
+    float: right;
+    padding-top: 17px;
+    margin-left: -25px;
+}
+#princing-boxcolor-table .jumbotron{
+    padding: 0 0;
 }

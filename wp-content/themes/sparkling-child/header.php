@@ -59,10 +59,9 @@
 				<div class="row">
 
 					<div class="header-info-top-mobile">
-						<div class="contact-no">AUSTRALIA: <span class="number">1300 882 318</span>
-						</div>
-						<div class="contact-no">USA: <span>(877) 959-4445</span>
-						</div>
+						<div class="contact-no">AUSTRALIA: <span class="number">1300 882 318</span></div>
+						<div class="contact-no">USA: <span>(877) 959-4445</span></div>
+						<div class="contact-no header-login"><a href="https://npfonline.com/NPFCP/Login.aspx">Login</a> </div>
 					</div>
 
 					<?php if( get_header_image() != '' ) : ?>
@@ -83,10 +82,14 @@
 
 					<?php endif; // header image was removed (again) ?>
 
-					<div class="header-get-started">
-						<a href="/pricing">
-							<span>GET STARTED</span>
-						</a>
+					<div class="started-login">
+						<div class="header-login"><a href="https://npfonline.com/NPFCP/Login.aspx">Login</a> </div>
+						<div class="header-get-started">
+							<a href="/pricing">
+								<span>GET STARTED</span>
+							</a>
+						</div>
+
 					</div>
 
 					<div class="header-info-top">
