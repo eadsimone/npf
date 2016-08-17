@@ -1574,7 +1574,8 @@ h1.about-entry-title {
 }
 
 .princing-4col-table .col-lg-3 div {
-    padding: 3%;
+    /*padding: 3%;*/
+    padding: 2%;
 }
 
 .grey-filter {
@@ -1608,6 +1609,9 @@ td.checkmark span:after,ul.checkmark li:after,ul.checkmarkgreen li:after {
 .bg-yellow {
     background-color: #ffb300;
     border-bottom: 1px solid #fff;
+}
+td.bg-yellow.vertical-group-row img {
+     max-width: none;
 }
 
 td.checkmark span:after,ul.checkmark li:after {
@@ -1706,6 +1710,7 @@ ul.checkmarkgreen {
 
 .heigh103 {
     height: 103px;
+    min-width: 205px;
 }
 
 .dark-blue-bg-opacity .ovalo,.light-green-bg-opacity .ovalo,.text-light-blue-bg-opacity .ovalo,.violet-bg-opacity .ovalo {
@@ -1812,6 +1817,18 @@ ul.checkmarkgreen {
     width: 19%;
     padding-left: 3px!important;
     padding-right: 3px!important;
+}
+#fixedw1,#fixedw2,#fixedw3,#fixedw4 {
+    /*padding-left: 3px!important;*/
+    /*padding-right: 3px!important;*/
+    padding: 5px !important;
+}
+#fixedw1 div,
+#fixedw2 div,
+#fixedw3 div,
+#fixedw4 div {
+    border-radius: 5px;
+    /*height: 44px;*/
 }
 
 .selectplan-table table th div {
@@ -2172,6 +2189,12 @@ ul.checkmarkgreen {
     .get-started-today-bar .container .btn.btn-lg.btn-success {
         padding: 4% 20% 4% 10%;
     }
+    .heigh103 {
+        height: 103px;
+        min-width: 205px;
+        width: 100%;
+    }
+
 }
 
 @media only screen and (max-width:550px) {
